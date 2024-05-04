@@ -16,7 +16,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 ---
 
-Welcome to my homepage! I am Yindu Su (苏银都 in Chinese), an Algorithm Engineer at Alibaba Group.
+Welcome to my homepage! I am Yindu Su, an Algorithm Engineer at Alibaba Group.
 
 Prior to joining Alibaba, I earned my Master's degree in Computer Technology in 2023 and my Bachelor's degree in Energy Engineering in 2020, both from Zhejiang University.
 

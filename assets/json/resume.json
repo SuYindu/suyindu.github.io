@@ -5,28 +5,28 @@
   },
   "experience": [
     {
-      "name": "Singapore Management University",
+      "name": "SCIS, Singapore Management University",
       "location": "Singapore",
       "position": "Research Engineer",
       "startDate": "2024.07",
       "endDate": "now"
     },
     {
-      "name": "Alibaba Group",
+      "name": "Taobao and Tmall Group, Alibaba Group",
       "location": "Hangzhou, China",
       "position": "Algorithm Engineer",
       "startDate": "2023.04",
       "endDate": "2024.07"
     },
     {
-      "name": "Zhejiang University",
+      "name": "College of Computer Science and Technology, Zhejiang University",
       "location": "Hangzhou, China",
       "position": "M.E. in Computer Technology",
       "startDate": "2020.09",
       "endDate": "2023.03"
     },
     {
-      "name": "Zhejiang University",
+      "name": "College of Energy Engineering, Zhejiang University",
       "location": "Hangzhou, China",
       "position": "B.E. in Energy Engineering",
       "startDate": "2016.09",

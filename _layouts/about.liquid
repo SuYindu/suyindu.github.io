@@ -55,14 +55,6 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
-
     <!-- Social -->
     {% if page.social %}
       <div class="social">
@@ -71,5 +63,51 @@ layout: default
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
     {% endif %}
+  </article>
+</div>
+
+<div class="post">
+  <article>
+    <div class="cv">
+      {% for data in site.data.resume %}
+        {% if site.jsonresume and site.jsonresume.size > 0 %}
+          {% unless site.jsonresume contains data[0] %}
+            {% continue %}
+          {% endunless %}
+        {% endif %}
+        {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
+        <a class="anchor" id="{{ data[0] }}"></a>
+        <div class="card mt-3 p-3">
+          <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
+          <div>
+            {% case data[0] %}
+              {% when 'education' %}
+                {% include resume/education.liquid %}
+              {% when 'experience' %}
+                {% include resume/experience.liquid %}
+              {% when 'volunteer' %}
+                {% include resume/volunteer.liquid %}
+              {% when 'projects' %}
+                {% include resume/projects.liquid %}
+              {% when 'awards' %}
+                {% include resume/awards.liquid %}
+              {% when 'skills' %}
+                {% include resume/skills.liquid %}
+              {% when 'publications' %}
+                {% include resume/publications.liquid %}
+              {% when 'languages' %}
+                {% include resume/languages.liquid %}
+              {% when 'interests' %}
+                {% include resume/interests.liquid %}
+              {% when 'certificates' %}
+                {% include resume/certificates.liquid %}
+              {% when 'references' %}
+                {% include resume/references.liquid %}
+              {% else %}
+            {% endcase %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
   </article>
 </div>

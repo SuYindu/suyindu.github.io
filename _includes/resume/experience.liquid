@@ -1,16 +1,9 @@
-<style>
-  .list-group-item {
-    margin-left: 0;
-    padding-left: 0;
-  }
-</style>
-
 <ul class="card-text font-weight-light list-group list-group-flush">
   {% assign experience = data[1] | sort: 'startDate' | reverse %}
   {% for content in experience %}
     <li class="list-group-item">
       <div class="row">
-        <div class="col-xs-3 col-sm-3 col-md-3 d-flex flex-column align-items-start">
+        <div class="col-xs-2 col-sm-2 col-md-2 d-flex flex-column align-items-start">
           {% if content.startDate %}
             {% assign startDate = content.startDate | split: '-' | slice: 0, 2 | join: '.' %}
             {% assign endDate = content.endDate | split: '-' | slice: 0, 2 | join: '.' | default: 'Present' %}
@@ -20,10 +13,10 @@
             {% assign date = '' %}
           {% endif %}
           {% if date %}
-            <span class="badge font-weight-bold danger-color-dark text-uppercase mb-2"> {{ date }} </span>
+            <span class="badge font-weight-bold danger-color-dark mb-2"> {{ date }} </span>
           {% endif %}
           {% if content.location %}
-            <p class="location m-0">
+            <p class="location m-0" style="font-size: 0.8rem;">
               <i class="fa-solid fa-location-dot iconlocation"></i>
               {{ content.location }}
             </p>
@@ -31,15 +24,7 @@
         </div>
         <div class="col-xs-9 col-sm-9 col-md-9">
           <h6 class="title font-weight-bold">{{ content.position }}</h6>
-          <h6 style="font-size: 0.75rem">{{ content.organization }}</h6>
-          <h6 style="font-size: 0.95rem; font-style: italic">{{ content.summary }}</h6>
-          <ul class="items">
-            {% for item in content.highlights %}
-              <li>
-                <span class="item">{{ item }}</span>
-              </li>
-            {% endfor %}
-          </ul>
+          <p style="font-size: 0.8rem">{{ content.organization }}</p>
         </div>
       </div>
     </li>

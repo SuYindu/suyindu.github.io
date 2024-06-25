@@ -1,15 +1,11 @@
 {
-  "general": {
-    "name": "Yindu Su (苏银都)",
-    "email": "suyindu.yd@taobao.com"
-  },
   "experience": [
     {
-      "organization": "School of Computing and Information Systems, SMU",
+      "organization": "School of Computing and Information Systems, Singapore Management University",
       "location": "Singapore",
       "position": "Research Engineer in Software Engineering",
       "startDate": "2024.07",
-      "endDate": "present"
+      "endDate": "Present"
     },
     {
       "organization": "Taobao and Tmall Group, Alibaba Group",

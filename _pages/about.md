@@ -9,7 +9,7 @@ profile:
   image: suyindu.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    suyindu.yd@taobao.com
+    
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -21,4 +21,4 @@ Hello and welcome to my homepage! I am Yindu Su (苏银都 in Chinese), a Resear
 Prior to my current position, I was an Algorithm Engineer at [Alibaba Group](https://www.alibabagroup.com/en-US/). I earned my Master's degree in Computer Technology and my Bachelor's degree in Energy Engineering, both from [Zhejiang University (ZJU)](https://www.zju.edu.cn/english/).
 
 My research interests lie at the intersection of **software engineering (SE)** and **natural language processing (NLP)**.
-Please don't hesitate to contact me with any questions or to discuss potential collaboration opportunities.
+Please don't hesitate to contact me with any questions or to discuss potential collaboration opportunities at <yindusu@smu.edu.sg>.
